@@ -1,4 +1,4 @@
 class Favourite < ApplicationRecord
   belongs_to :car
-  validates :card_id, uniqueness: true
+  validates :car_id, uniqueness: true
 end

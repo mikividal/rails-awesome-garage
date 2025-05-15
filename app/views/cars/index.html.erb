@@ -3,8 +3,8 @@
 <hr>
 <% @cars.each do |car| %>
   <h2> <%= car.brand %></h2>
-  <h3>Model: <%= car.model %></h3>
-  <p>Owner: <%= car.owner.nickname %> </p>
-  <p> Posted: <%= car.created_at.strftime("%A, %d %b %Y %l:%M %p") %> </p>
+  <h3> <%= car.model %></h3>
+  <p> <%= car.owner.nickname %> </p>
+  <p><%= car.created_at.strftime("%A, %d %b %Y %l:%M %p") %> </p>
   <hr>
 <% end %>
