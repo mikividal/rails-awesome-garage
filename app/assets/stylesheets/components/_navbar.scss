@@ -1,0 +1,17 @@
+.navbar{
+  background: rgb(205, 203, 203);
+  padding: 5px 20px;
+  img{
+    width:130px;
+  }
+}
+
+.navbar a {
+  padding:8px;
+  color: rgb(74, 72, 72);
+
+  &:hover {
+    color:black;
+    text-decoration:underline;
+  }
+}

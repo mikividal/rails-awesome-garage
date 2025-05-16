@@ -1,0 +1,112 @@
+// index cards
+.card{
+  margin: 50px auto;
+  width: 75%;
+}
+
+img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.card-footer h6{
+   color: rgb(93, 93, 93);
+   font-weight: bold;
+}
+
+.card-footer p{
+  background-color: black;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: -20px;
+}
+
+// card for each car
+.card-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews{
+  border-top: 1px solid rgba(128, 128, 128, 0.709);
+  margin: 0px 16px;
+  display: flex;
+  align-items:flex-start;
+  gap: 5px;
+}
+
+#car-card{
+  margin: 50px auto;
+  width: 50%;
+}
+
+.cardimage{
+  height: 300px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  background-position: center;
+
+}
+.card-details{
+  padding:16px;
+    p {
+  color: white;
+  }
+}
+
+
+.form-label {
+  display: none;
+}
+
+// my-garage cards
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  width:80%;
+}
+
+.card-product img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+  width: 100%;
+}
+
+.fa-regular{
+  color: rgba(0, 0, 0, 0.734);
+}

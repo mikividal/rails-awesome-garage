@@ -1,7 +1,22 @@
 <h1>My Garage</h1>
 
-<% @favourites.each do |favourite|%>
-  <%= favourite.car.brand %>
-  <%= favourite.car.model %>
-  <%= link_to "Delete", favourite_path(favourite), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
-<% end %>
+<div class="container d-flex flex-column align-items-center gap-3">
+  <% @favourites.each do |favourite|%>
+    <div class="card-product">
+      <img src="<%= favourite.car.image_url %>">
+      <div class="card-product-infos">
+        <h2> <%= favourite.car.brand %> </h2>
+        <h3> <%= favourite.car.model %> </h3>
+        <div class="d-flex justify-content-between w-100">
+          <div>
+            <p> <%= favourite.car.year%></p>
+            <p> <%= favourite.car.fuel%></p>
+          </div>
+          <%= link_to favourite_path(favourite), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } do %>
+            <i class="fa-regular fa-trash-can"></i>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

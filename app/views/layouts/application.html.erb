@@ -11,6 +11,10 @@
   </head>
 
   <body>
+  <%# hide navbar in the homepage but showing on all other pages %>
+      <% unless current_page?(root_path) %>
+        <%= render "shared/navbar" %>
+      <% end %>
     <%= yield %>
   </body>
 </html>

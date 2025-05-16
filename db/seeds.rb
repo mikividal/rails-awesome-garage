@@ -12,6 +12,8 @@ puts "Cleaning db"
 
 Car.destroy_all
 Owner.destroy_all
+Review.destroy_all
+Favourite.destroy_all
 
 puts "Creating Owners..."
 
@@ -23,8 +25,8 @@ puts "Created #{Owner.count} owner"
 
 puts "Creating Cars..."
 
-Car.create!(brand: "Mini Cooper", model: "Sport", year: 2025, owner: auggie)
-Car.create!(brand: "Mercedes", model: "Class C", year: 2025, owner: quiqui)
-Car.create!(brand: "Yaguar", model: "Sport", year: 2024, owner: justi)
+Car.create!(brand: "Mini Cooper", model: "Sport", year: 2025, owner: auggie, image_url:"https://classicandsportscar.ltd.uk/images/2017/02/lg/mini-cooper-500_30642.jpg")
+Car.create!(brand: "Mercedes", model: "Class C", year: 2025, owner: quiqui, image_url:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Festival_automobile_international_2015_-_Mercedes_AMG_GT_-_003.jpg/2880px-Festival_automobile_international_2015_-_Mercedes_AMG_GT_-_003.jpg")
+Car.create!(brand: "Jaguar", model: "Sport", year: 2024, owner: justi, image_url:"https://static0.carbuzzimages.com/wordpress/wp-content/uploads/gallery-images/original/438000/0/438083.jpg")
 
 puts "Created #{Car.count} cars"
